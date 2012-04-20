@@ -8,11 +8,6 @@ app = Flask(__name__)
 def main():
     return "IT WORKS!"
 
-@app.route("/sso/lion-brand")
-def sso():
-    a_cookie = request.cookies.get('a_cookie')
-    return jsonify() 
-
 if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
